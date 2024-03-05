@@ -1,0 +1,40 @@
+body {
+    background-color: black;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+h1 {
+    color: #f00;
+    text-align: center;
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    z-index: 1; 
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.flashing-image {
+    mix-blend-mode: screen;
+    width: 900px;
+    height: 900px;
+    background-image: url("scary-face-pictures-fvx05bim45ctjiwh.jpg");
+    background-size: cover;
+    animation: flash 0.1s infinite alternate; 
+}
+
+@keyframes flash {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="biohazard-sign.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DO NOT CLICK</title>
+</head>
+<body>
+    <div class="centered">
+    <div class="flashing-image"></div>
+</div>
+    <audio id="intro-audio" autoplay preload="auto">
+      <source src="five-nights-at-freddys-full-scream-sound_2.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <h1>I Told You Not to Click It</h1>
+    <script>
+      const audio = document.getElementById('intro-audio');
+
+      audio.onended = function() {
+        audio.style.display = 'none';
+      };
+    </script>
+</body>
+</html>
+
